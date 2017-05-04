@@ -1,7 +1,0 @@
-{
-    "dependencies": {
-        "gopkg.in/mgo.v2": {
-            "branch": "v2"
-        }
-    }
-}
