@@ -7,12 +7,6 @@ import (
 	"golang.org/x/sync/syncmap"
 )
 
-type Serializer interface {
-	Marshal(v interface{}) ([]byte, error)
-	Unmarshal(d []byte, v interface{}) error
-	Name() string
-}
-
 var serializers syncmap.Map
 
 func FromName(s string) (Serializer, error) {
