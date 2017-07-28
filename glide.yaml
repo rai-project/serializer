@@ -1,5 +1,17 @@
 package: github.com/rai-project/serializer
 import:
+- package: github.com/gogo/protobuf
+  version: ~0.4.0
+  subpackages:
+  - jsonpb
+  - proto
+- package: github.com/rai-project/config
+- package: github.com/rai-project/logger
+- package: github.com/sirupsen/logrus
+  version: ~1.0.2
+- package: golang.org/x/sync
+  subpackages:
+  - syncmap
 - package: gopkg.in/mgo.v2
   subpackages:
   - bson

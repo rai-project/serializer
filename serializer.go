@@ -5,8 +5,6 @@ import (
 	"strings"
 
 	"golang.org/x/sync/syncmap"
-
-	"github.com/apex/log"
 )
 
 type Serializer interface {
