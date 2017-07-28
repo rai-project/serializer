@@ -23,3 +23,7 @@ func (bsonSerializer) Name() string {
 func New() serializer.Serializer {
 	return bsonSerializer{}
 }
+
+func init() {
+	serializer.AddSerializer(bsonSerializer{})
+}

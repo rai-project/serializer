@@ -23,3 +23,7 @@ func (jsonSerializer) Name() string {
 func New() serializer.Serializer {
 	return jsonSerializer{}
 }
+
+func init() {
+	serializer.AddSerializer(jsonSerializer{})
+}
