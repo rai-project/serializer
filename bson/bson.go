@@ -25,5 +25,5 @@ func New() serializer.Serializer {
 }
 
 func init() {
-	serializer.AddSerializer(bsonSerializer{})
+	serializer.Register(bsonSerializer{})
 }

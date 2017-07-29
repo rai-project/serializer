@@ -26,7 +26,7 @@ func FromName(s string) (Serializer, error) {
 	return serializer, nil
 }
 
-func AddSerializer(s Serializer) {
+func Register(s Serializer) {
 	serializers.Store(strings.ToLower(s.Name()), s)
 }
 

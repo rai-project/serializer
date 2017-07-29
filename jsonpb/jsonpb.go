@@ -45,7 +45,7 @@ func New() serializer.Serializer {
 }
 
 func init() {
-	serializer.AddSerializer(jsonpbSerializer{
+	serializer.Register(jsonpbSerializer{
 		marshaler: jsonpb.Marshaler{
 			Indent: "  ",
 		},
