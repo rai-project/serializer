@@ -1,7 +1,7 @@
 package json
 
 import (
-	"encoding/json"
+	"github.com/json-iterator/go"
 
 	"github.com/rai-project/serializer"
 )
@@ -9,11 +9,11 @@ import (
 type jsonSerializer struct{}
 
 func (jsonSerializer) Marshal(v interface{}) ([]byte, error) {
-	return json.Marshal(v)
+	return jsoniter.Marshal(v)
 }
 
 func (jsonSerializer) Unmarshal(d []byte, v interface{}) error {
-	return json.Unmarshal(d, v)
+	return jsoniter.Unmarshal(d, v)
 }
 
 func (jsonSerializer) Name() string {

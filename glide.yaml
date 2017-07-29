@@ -5,10 +5,14 @@ import:
   subpackages:
   - jsonpb
   - proto
+- package: github.com/json-iterator/go
 - package: github.com/rai-project/config
 - package: github.com/rai-project/logger
 - package: github.com/sirupsen/logrus
   version: ~1.0.2
+- package: github.com/ugorji/go
+  subpackages:
+  - codec
 - package: golang.org/x/sync
   subpackages:
   - syncmap
