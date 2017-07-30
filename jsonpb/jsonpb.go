@@ -50,7 +50,7 @@ func init() {
 			Indent: "  ",
 		},
 		unmarshaler: jsonpb.Unmarshaler{
-			AllowUnknownFields: true,
+			AllowUnknownFields: false,
 		},
 	})
 }
