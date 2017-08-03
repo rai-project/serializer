@@ -13,7 +13,7 @@ import:
 - package: github.com/rai-project/config
 - package: github.com/rai-project/logger
 - package: github.com/sirupsen/logrus
-  version: ~1.0.2
+  version: ^1.0.0
 - package: github.com/ugorji/go
   subpackages:
   - codec
