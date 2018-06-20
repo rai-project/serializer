@@ -3,6 +3,8 @@ import:
 - package: github.com/Sereal/Sereal
   subpackages:
   - Go/sereal
+- package: github.com/golang/protobuf
+  version: master
 - package: github.com/gogo/protobuf
   version: ^1.0.0
   subpackages:
