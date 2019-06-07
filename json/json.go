@@ -1,11 +1,25 @@
 package json
 
 import (
-	"github.com/json-iterator/go"
+	jsoniter "github.com/json-iterator/go"
 	"github.com/rai-project/serializer"
 )
 
 type jsonSerializer struct{}
+
+var std jsonSerializer
+
+func init() {
+	std = New().(jsonSerializer)
+}
+
+func Marshal(v interface{}) ([]byte, error) {
+	return std.Marshal(v)
+}
+
+func Unmarshal(d []byte, v interface{}) error {
+	return std.Unmarshal(d, v)
+}
 
 func (jsonSerializer) Marshal(v interface{}) ([]byte, error) {
 	// if c, ok := v.(codec.Selfer); ok {
